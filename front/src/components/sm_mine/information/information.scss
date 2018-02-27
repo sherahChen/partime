@@ -1,0 +1,109 @@
+body .i_container{
+    height: 100%;
+    display:flex;
+    background-color:#F5F5F5;
+    flex-direction:column;
+    background-color:#F5F5F5;
+    #mine_header{
+        position:flex;
+        top:0;
+        left:0;
+        background-color:#188AF9;
+        height:1.173333rem;
+        display:flex;
+        li{
+            i{
+                padding:0.133333rem;
+            }
+            span{
+                font-size:0.4rem;
+            }
+            flex:1;
+            line-height: 1.173333rem;
+            font-size:0.453333rem;
+            color:#fff;
+            border:0;
+        }
+        li:nth-child(2){
+            text-align:center;
+        }
+        li:nth-child(3){
+            text-align:right;
+        }
+    }
+
+    #i_main{
+        flex:1;
+        overflow:auto;
+        background-color:#F5F5F5;
+
+        li{
+            position:relative;
+            background-color:#fff;
+            display:flex;
+            font-size:0.4rem;
+            padding:0.4rem 0.4rem;
+             border-bottom:1px solid #EAEAEA; 
+             label{
+                flex:1.7;
+             }
+             input{
+                flex:5;
+                border:0;
+                font-size:0.4rem;
+                text-align:right;
+                background-color:#fff;
+             }
+            img{
+               
+             }
+             i{
+                text-align:right;
+                line-height: 0.533333rem;
+                flex:0.5;
+             }
+        }
+        .avatar-uploader{        
+            height: 1.96rem;
+            .el-upload{
+                margin-top:0.266667rem;
+                border:1px solid #EAEAEA;
+                width: 1.466667rem;
+                height: 1.466667rem;
+                border-radius:50%;
+                background:url('../../../assets/imgs/toux.png') no-repeat;
+                background-position:center;
+               background-size:cover;
+            }
+            .avatar {
+                border-radius:50%;
+                width: 1.466667rem;
+                height: 1.466667rem;
+                display: block;
+              }
+        }
+        .el-date-editor{
+            flex:5;
+            span{
+                height: 0;
+                width: 0;
+               
+            }
+            >.el-input__inner{
+                padding: 0;
+
+            }
+        }
+        li:nth-child(1){
+            padding: 0 0.4rem;
+            line-height: 1.96rem;
+         i{
+            flex:0.15;
+            line-height: 1.96rem;
+         }
+        }
+        li:nth-child(5n){
+            margin-top:0.4rem;
+        }
+        }
+}
